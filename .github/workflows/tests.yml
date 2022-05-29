@@ -20,4 +20,4 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -Pgithub -B package --file pom.xml
+      run: mvn mvn test -Dspring.profiles.active=github -B package --file pom.xml
