@@ -1,1 +1,10 @@
+spring:
+  datasource:
+    username: postgres
+    password: ecosystem
+    url: jdbc:postgresql://192.168.1.245:5432/shop
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    open-in-view: false
+    generate-ddl: true
 
