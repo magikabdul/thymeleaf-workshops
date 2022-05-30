@@ -1,6 +1,8 @@
 package cloud.cholewa.thymeleafworkshops.books.adapters.persistence;
 
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,6 +13,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "books")
 @NoArgsConstructor
+@Getter
+@Setter
 public class BookEntity {
 
     @Id

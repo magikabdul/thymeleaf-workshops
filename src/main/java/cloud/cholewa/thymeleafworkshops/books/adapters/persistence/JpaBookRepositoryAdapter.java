@@ -32,6 +32,6 @@ public class JpaBookRepositoryAdapter implements BookRepository {
 
     @Override
     public List<BookDomain> getAll() {
-        return null;
+        return bookMapper.toDomain(bookRepository.findAll());
     }
 }
