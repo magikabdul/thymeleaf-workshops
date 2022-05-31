@@ -1,12 +1,9 @@
-package cloud.cholewa.thymeleafworkshops.books.domain;
+package cloud.cholewa.thymeleafworkshops.books.adapters.web;
 
-import lombok.Builder;
 import lombok.Data;
 
 @Data
-@Builder
-public class BookDomain {
-
+public class BookViewModel {
     private String author;
     private String title;
     private String genre;
